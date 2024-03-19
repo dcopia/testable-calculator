@@ -36,3 +36,23 @@ class TestExpressions(CalculatorGUITestCase):
         self.assert_display("1.2+2")
         self.press_button("=")
         self.assert_display("3.2")
+
+class TestLayout(CalculatorGUITestCase):
+    def test_all_buttons_are_there(self):
+        self.assert_display("0")
+        self.press_button("2")
+        self.press_button("1")
+        self.press_button("2")
+        self.press_button("3")
+        self.press_button("4")
+        self.press_button("5")
+        self.press_button("6")
+        self.press_button("7")
+        self.press_button("8")
+        self.press_button("9")
+        self.press_button("+")
+        self.press_button("-")
+        self.press_button("*")
+        self.press_button("/")
+        self.press_button("=")
+        self.press_button("C")
